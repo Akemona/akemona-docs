@@ -1,25 +1,220 @@
-# Frequently Asked Questions
 
-**Frequently asked questions related to the Akemona.**
+# Akemona Digital Asset Platform – Frequently Asked Questions (FAQ)
 
-## What products and services do you offer?
+This FAQ page provides detailed answers to common questions about Akemona’s **SaaS digital asset platform**, its applications, integrated capabilities, and technical support services.
 
-The Akemona provides a comprehensive RWA Tokenization Platform for issuing digital securities, such as tokenized stocks and bonds, on both public and private blockchains. The Foundation is a not-for-profit reseller of the Akemona RWA Tokenization Platform software and services under a licensing agreement with Akemona Technologies. The Akemona RWA Tokenization Platform is a regulatory-compliant DeFi platform. We offer our platform as a white-label Software-as-a-Service (SaaS) solution to financial institutions, private equity firms, and real estate businesses.
 
-Our RWA Tokenization Platform has the following core functionality:
 
-- Fundraising and Investment Management - The issuance and sale of RWA, utility, governance, and security tokens and the management of their lifecycle.
-- White-label SaaS platform - For issuing utility and security tokens and managing the lifecycle of tokens by issuers under their own brand names.
-- Post-subscription services - Provided to investors and issuers. One of the platform licensees is SEC-registered transfer agent [OnchainTA.com](https://OnchainTA.com).
+## 🔗 Quick Links
 
-## What is Akemona’s unique value proposition?
+* [General Platform Questions](#general-platform-questions)
+* [Investor Portal](#investor-portal)
+* [Admin App](#admin-app)
+* [Escrow Manager](#escrow-manager)
+* [OnchainTA (Transfer Agent)](#onchainta-transfer-agent)
+* [KYC/AML Integration](#kycaml-integration)
+* [Secure Payments](#secure-payments)
+* [Technical Support](#technical-support)
 
-Akemona specializes in RWA tokenization, helping businesses worldwide raise funds efficiently and affordably. Our low-cost investment crowdfunding platform empowers entrepreneurs to secure funding for startups and ongoing operations. 
 
-## Was the Akemona RWA Tokenization Platform audited for security?
 
-Yes, in September 2023 Highland Security performed an extensive security audit of the Akemona RWA Tokenization Platform source code including smart contracts. They did not find any red flags. Akemona does not release any security audit reports, which are less than one year old or which have outstanding deficiencies. Since the audit by Highland Security is more than a year old and we have fixed all the deficiencies, we are releasing it with partial redactions on our GitHub: Akemona Security Maturity Assessment.
+## General Platform Questions
 
-## Was one of the licensees of the Akemona RWA Tokenization Platform ever audited by the Securities and Exchange Commission?
+**Q1. What is the Akemona digital asset platform?**
+Akemona is a SaaS-based digital asset platform that enables financial institutions, issuers, and investors to issue, manage, trade, and safeguard **tokenized securities and digital assets**.
 
-Yes, Akemona, Inc. and OnchainTA were both audited by the Securities and Exchange Commission in December 2021 and December 2022, respectively. No major deficiencies came to the SEC’s attention in December 2021. In December 2022, the SEC pointed out certain deficiencies of a fix-it nature with OnchainTA, which were resolved by July 2023. We are releasing redacted letters from the SEC on our GitHub: SEC Letters.
+**Q2. What applications are included in the Akemona platform?**
+
+* **Issuer Hub** – Enables issuers to launch, configure, and manage offerings.
+* **Admin App** – Provides administrators and lead managers with compliance, oversight, and management tools.
+* **Investor Portal** – A self-service portal for investors to register, invest, and track holdings.
+* **Escrow Manager** – Enables qualified custodians and escrow agents to reconcile funds and manage investor protections.
+* **OnchainTA** – A non-custodial transfer agent for digital asset securities.
+
+Integrated capabilities include **KYC/AML verification, Secure Payments, and Technical Support services**.
+
+**Q3. Who can use the Akemona platform?**
+
+* **Financial institutions**
+* **Issuers**
+* **Investors**
+* **Custodians and escrow agents**
+
+[Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
+
+
+
+## Investor Portal
+
+**Q4. What can investors do on the Investor Portal?**
+
+* Register information and wallets.
+* Browse investment opportunities.
+* Make onchain/offchain investments.
+* Track holdings and transactions.
+
+**Q5. Does the Investor Portal perform KYC/AML at registration?**
+No. KYC/AML is triggered only at the **first investment**.
+
+**Q6. How are payments handled on the Investor Portal?**
+
+* **Onchain:** via smart contracts (secure, transparent, all-or-none).
+* **Offchain:** via ACH, Plaid APIs, or wire transfer.
+
+**Q7. Can investors cancel an investment?**
+Yes. Investors can cancel their commitment before the offering is closed. Refunds are processed automatically onchain or reconciled offchain.
+
+[Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
+
+
+
+## Admin App
+
+**Q8. What does the Admin App do?**
+The Admin App provides compliance oversight, operational controls, and investment monitoring for administrators and lead managers.
+
+**Q9. How does the Admin App integrate with KYC/AML?**
+It automatically updates investor KYC/AML verification status and can manually override when necessary.
+
+**Q10. Can Admin App users block malicious or suspicious transactions?**
+Yes. Admins can halt suspicious transactions and protect investor funds.
+
+**Q11. Is the Admin App integrated with OFAC watchlists?**
+Yes. Wallet addresses and investor identities can be checked against U.S. Treasury OFAC databases.
+
+[Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
+
+
+
+## Escrow Manager
+
+**Q12. What is the role of the Escrow Manager app?**
+It enables **escrow agents or qualified custodians** to reconcile and safeguard investor funds.
+
+**Q13. How are funds managed through the Escrow Manager?**
+
+* **Onchain:** Funds are automatically transferred and refunded via smart contracts.
+* **Offchain:** Funds are monitored via bank APIs and reconciled manually by the escrow agent.
+
+**Q14. Can the Escrow Manager support both onchain and offchain offerings?**
+Yes. It dynamically supports:
+
+* Fully onchain offerings.
+* Fully offchain offerings.
+* Hybrid models.
+
+**Q15. How is investor protection ensured?**
+If issuers cancel or fail to meet conditions, funds are returned automatically to investors via the Escrow Manager.
+
+[Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
+
+
+
+## OnchainTA (Transfer Agent)
+
+**Q16. What is OnchainTA?**
+OnchainTA is a **non-custodial transfer agent** for digital asset securities. It tracks ownership and ensures compliance with securities rules.
+
+**Q17. What investor services does OnchainTA provide?**
+
+* Lost asset replacement (for securities, not utility tokens).
+* Peer-to-peer trading.
+* Ownership verification.
+* Dividend and corporate action distribution.
+
+**Q18. How does OnchainTA handle transfers?**
+It verifies transferee registration and KYC/AML, then adds wallets to whitelists for compliant transfers.
+
+**Q19. How does peer-to-peer trading work?**
+Whitelisted investors can trade directly with one another without intermediaries, subject to securities compliance.
+
+**Q20. Can issuers use OnchainTA for cap table management?**
+Yes. The cap table updates automatically with every investor transaction.
+
+[Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
+
+
+
+## KYC/AML Integration
+
+**Q21. Where is KYC/AML performed?**
+
+* **Investor Portal:** At first investment.
+* **Admin App:** Automatic or manual verification.
+* **Escrow Manager:** Ensures funds are held only for verified investors.
+
+**Q22. Which systems are integrated for KYC/AML?**
+Third-party providers like **Plaid** or **Trulioo** for KYC checks, and **OFAC lists** for compliance.
+
+**Q23. Why is KYC/AML compliance important?**
+KYC/AML compliance is mandated by:
+
+* **U.S. Bank Secrecy Act (BSA)**
+* **USA PATRIOT Act**
+* **FinCEN regulations**
+* **OFAC sanctions requirements**
+  It helps prevent fraud, money laundering, and terrorist financing.
+
+[Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
+
+
+
+## Secure Payments
+
+**Q24. How are onchain payments secured?**
+Smart contracts execute all-or-none transactions: funds are withdrawn and digital assets issued in a single, transparent blockchain transaction.
+
+**Q25. How are offchain payments secured?**
+
+* Via secure APIs (Plaid, ACH).
+* Wire transfers initiated by investors directly through banks.
+* No sensitive payment details stored by Akemona.
+
+**Q26. What risks exist for wire transfers?**
+⚠️ **Important Disclaimer**: Investors must carefully verify the **official wire transfer details** on the Akemona portal. Instructions should never be altered via phone or email. Wire transfers sent to incorrect recipients may be unrecoverable, and Akemona may not be able to assist in recovering funds. In case of doubt, contact **[support@akemona.com](mailto:support@akemona.com)**.
+
+**Q27. Can admins stop suspicious payments?**
+Yes. Admins can intervene via the Admin App to block malicious activity.
+
+[Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
+
+
+
+## Technical Support
+
+**Q28. How can I access Akemona’s technical support?**
+**👉 Technical Support is available at [https://akemona.com/contact](https://akemona.com/contact) and by email at [support@akemona.com](mailto:support@akemona.com).**
+
+**Q29. What support is included with SaaS subscriptions?**
+
+* Email/phone support.
+* Bug fixes and code corrections.
+* Updates, enhancements, and new features provided to all subscribers.
+* Up to three dedicated customer support contacts.
+
+**Q30. What are Akemona’s SLA commitments?**
+
+* **Availability:** 98% uptime monthly (excluding maintenance/force majeure).
+* **Response Goals:**
+
+  * Critical: respond in 4 hours, fix in 24.
+  * Moderate: respond in 8 hours, fix in 7 days.
+  * Minor: respond in 24 hours, fix in 10 days.
+  * Low: respond in 48 hours, fix in future release.
+
+**Q31. Are backups provided?**
+Yes. Standard schedule:
+
+* Daily backups (30 days retained).
+* Monthly backups (3 months retained).
+* Yearly backups (6 years retained).
+
+**Q32. What is not included in support?**
+
+* Customer’s own internet, VPN, or device security issues.
+* Misconfigured client systems.
+* Custom backup plans (available at extra cost).
+
+[Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
+
+
