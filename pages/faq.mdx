@@ -21,7 +21,7 @@ This FAQ page provides detailed answers to common questions about Akemona’s **
 ## General Platform Questions
 
 **Q1. What is the Akemona digital asset platform?**
-Akemona is a SaaS-based digital asset platform that enables financial institutions, issuers, and investors to issue, manage, trade, and safeguard **tokenized securities and digital assets**.
+* Akemona is a SaaS-based digital asset platform that enables financial institutions, issuers, and investors to issue, manage, trade, and safeguard **tokenized securities and digital assets**.
 
 **Q2. What applications are included in the Akemona platform?**
 
@@ -54,7 +54,7 @@ Integrated capabilities include **KYC/AML verification, Secure Payments, and Tec
 * Track holdings and transactions.
 
 **Q5. Does the Investor Portal perform KYC/AML at registration?**
-No. KYC/AML is triggered only at the **first investment**.
+* No. KYC/AML is triggered only at the **first investment**.
 
 **Q6. How are payments handled on the Investor Portal?**
 
@@ -62,7 +62,7 @@ No. KYC/AML is triggered only at the **first investment**.
 * **Offchain:** via ACH, Plaid APIs, or wire transfer.
 
 **Q7. Can investors cancel an investment?**
-Yes. Investors can cancel their commitment before the offering is closed. Refunds are processed automatically onchain or reconciled offchain.
+* Yes. Investors can cancel their investment commitment before the offering is closed. Refunds are processed automatically onchain or reconciled offchain.
 
 [Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
 
@@ -71,16 +71,16 @@ Yes. Investors can cancel their commitment before the offering is closed. Refund
 ## Admin App
 
 **Q8. What does the Admin App do?**
-The Admin App provides compliance oversight, operational controls, and investment monitoring for administrators and lead managers.
+* The Admin App provides compliance oversight, operational controls, and investment monitoring for administrators and lead managers.
 
 **Q9. How does the Admin App integrate with KYC/AML?**
-It automatically updates investor KYC/AML verification status and can manually override when necessary.
+* It automatically updates investor KYC/AML verification status and can manually override when necessary.
 
 **Q10. Can Admin App users block malicious or suspicious transactions?**
-Yes. Admins can halt suspicious transactions and protect investor funds.
+* Yes. Admins can halt suspicious transactions and protect investor funds.
 
 **Q11. Is the Admin App integrated with OFAC watchlists?**
-Yes. Wallet addresses and investor identities can be checked against U.S. Treasury OFAC databases.
+* Yes. Wallet addresses and investor identities can be checked against U.S. Treasury OFAC databases.
 
 [Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
 
@@ -89,7 +89,7 @@ Yes. Wallet addresses and investor identities can be checked against U.S. Treasu
 ## Escrow Manager
 
 **Q12. What is the role of the Escrow Manager app?**
-It enables **escrow agents or qualified custodians** to reconcile and safeguard investor funds.
+* It enables **escrow agents or qualified custodians** to reconcile and safeguard investor funds.
 
 **Q13. How are funds managed through the Escrow Manager?**
 
@@ -97,14 +97,14 @@ It enables **escrow agents or qualified custodians** to reconcile and safeguard 
 * **Offchain:** Funds are monitored via bank APIs and reconciled manually by the escrow agent.
 
 **Q14. Can the Escrow Manager support both onchain and offchain offerings?**
-Yes. It dynamically supports:
+* Yes. It dynamically supports:
 
 * Fully onchain offerings.
 * Fully offchain offerings.
 * Hybrid models.
 
 **Q15. How is investor protection ensured?**
-If issuers cancel or fail to meet conditions, funds are returned automatically to investors via the Escrow Manager.
+* If issuers cancel or fail to meet conditions, funds are returned automatically to investors via the Escrow Manager.
 
 [Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
 
@@ -113,7 +113,7 @@ If issuers cancel or fail to meet conditions, funds are returned automatically t
 ## OnchainTA (Transfer Agent)
 
 **Q16. What is OnchainTA?**
-OnchainTA is a **non-custodial transfer agent** for digital asset securities. It tracks ownership and ensures compliance with securities rules.
+* OnchainTA is a **non-custodial transfer agent** for digital asset securities. It tracks ownership and ensures compliance with securities rules.
 
 **Q17. What investor services does OnchainTA provide?**
 
@@ -123,13 +123,13 @@ OnchainTA is a **non-custodial transfer agent** for digital asset securities. It
 * Dividend and corporate action distribution.
 
 **Q18. How does OnchainTA handle transfers?**
-It verifies transferee registration and KYC/AML, then adds wallets to whitelists for compliant transfers.
+* It verifies transferee registration and KYC/AML, then adds wallets to whitelists for compliant transfers.
 
 **Q19. How does peer-to-peer trading work?**
-Whitelisted investors can trade directly with one another without intermediaries, subject to securities compliance.
+* Whitelisted investors can trade directly with one another without intermediaries, subject to securities compliance.
 
 **Q20. Can issuers use OnchainTA for cap table management?**
-Yes. The cap table updates automatically with every investor transaction.
+* Yes. The cap table updates automatically with every investor transaction.
 
 [Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
 
@@ -144,10 +144,10 @@ Yes. The cap table updates automatically with every investor transaction.
 * **Escrow Manager:** Ensures funds are held only for verified investors.
 
 **Q22. Which systems are integrated for KYC/AML?**
-Third-party providers like **Plaid** or **Trulioo** for KYC checks, and **OFAC lists** for compliance.
+* Third-party providers like **Plaid** or **Trulioo** for KYC checks, and **OFAC lists** for compliance.
 
 **Q23. Why is KYC/AML compliance important?**
-KYC/AML compliance is mandated by:
+* KYC/AML compliance is mandated by:
 
 * **U.S. Bank Secrecy Act (BSA)**
 * **USA PATRIOT Act**
@@ -162,7 +162,7 @@ KYC/AML compliance is mandated by:
 ## Secure Payments
 
 **Q24. How are onchain payments secured?**
-Smart contracts execute all-or-none transactions: funds are withdrawn and digital assets issued in a single, transparent blockchain transaction.
+* Smart contracts execute all-or-none transactions: funds are withdrawn and digital assets issued in a single, transparent blockchain transaction.
 
 **Q25. How are offchain payments secured?**
 
@@ -174,7 +174,7 @@ Smart contracts execute all-or-none transactions: funds are withdrawn and digita
 * ⚠️**Important Disclaimer**: Investors must carefully verify the **official wire transfer details** on the Akemona portal. Instructions should never be altered via phone or email. Wire transfers sent to incorrect recipients may be unrecoverable, and Akemona may not be able to assist in recovering funds. In case of doubt, contact **[support@akemona.com](mailto:support@akemona.com)**.
 
 **Q27. Can admins stop suspicious payments?**
-Yes. Admins can intervene via the Admin App to block malicious activity.
+* Yes. Admins can intervene via the Admin App to block malicious activity.
 
 [Return to top](#akemona-digital-asset-platform--frequently-asked-questions-faq)
 
@@ -203,7 +203,7 @@ Yes. Admins can intervene via the Admin App to block malicious activity.
   * Low: respond in 48 hours, fix in future release.
 
 **Q31. Are backups provided?**
-Yes. Standard schedule:
+* Yes. Standard schedule:
 
 * Daily backups (30 days retained).
 * Monthly backups (3 months retained).
