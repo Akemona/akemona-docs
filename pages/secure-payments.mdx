@@ -1,5 +1,87 @@
+
 # Secure Payments
 
-## Overview
+### Ensuring Trust, Transparency, and Protection in Every Transaction
 
-TODO
+The **Secure Payments** capability is a core feature integrated into the **Investor Portal** and managed through the **Admin App**. It enables investors to make both onchain and offchain investments with confidence, ensuring that every transaction is transparent, tamper-proof, and fully compliant with financial regulations.
+
+By combining blockchain automation with secure financial APIs, our platform ensures that investor funds are protected, payments are reconciled, and digital assets are issued only when funds are properly received.
+
+
+
+## Onchain Payments
+
+Onchain payments leverage the transparency and security of blockchain technology.
+
+* **Smart Contract Authorization**: Investors approve the amount to be invested directly from their own wallets. Smart contracts cannot withdraw funds without the investor’s explicit approval.
+* **Atomic Transactions**: The smart contract executes a single all-or-none process:
+
+  * Withdraw funds from the investor’s wallet (to the escrow wallet).
+  * Issue corresponding digital assets immediately.
+* **Full Transparency**: The code of the smart contract is verifiable onchain by investors or their representatives before committing funds.
+* **No Misuse of Permissions**: Since investor approval is transaction-specific, permissions cannot be reused or misapplied.
+* **Tamper-Proof Assurance**: It is technically impossible for funds to be taken without simultaneously issuing the corresponding digital assets.
+
+This mechanism guarantees **funds and assets move together**, removing risks of fraud or operational errors in onchain payments.
+
+
+
+## Offchain Payments
+
+For offchain payments, the Investor Portal integrates with trusted financial APIs and banking rails:
+
+* **Secure API Connections**: Payments are processed via secure integrations with providers such as **Plaid** and regulated banking institutions.
+* **ACH Transfers**: Investors can make ACH payments seamlessly through APIs without manually entering sensitive payment details.
+* **Wire Transfers**: For larger investments, investors can initiate direct wire transfers to escrow accounts.
+* **Payment Card Options**: Depending on offering configuration, cards may also be supported with full PCI-DSS compliant handling.
+* **Data Protection**: The Investor Portal does not store investor payment details, ensuring maximum data security.
+
+This approach minimizes fraud risk, eliminates unnecessary exposure of sensitive data, and ensures compliance with banking security standards.
+
+
+
+## Admin Oversight & Investor Protection
+
+All onchain and offchain transactions are actively **monitored and controlled** via the **Admin App**:
+
+* **Compliance Monitoring**: Admins can track every payment and ensure it aligns with offering terms and KYC/AML verification.
+* **Fraud Prevention**: If any suspicious activity is detected, admins can immediately block transactions to safeguard investors.
+* **Reconciliation**: Both onchain and offchain payments are reconciled with escrow accounts to ensure that assets are issued only when funds are received.
+
+
+
+## Why Secure Payments Matter
+
+Financial regulators globally — including the **SEC (U.S. Securities and Exchange Commission)**, **FINRA (Financial Industry Regulatory Authority)**, and global banking authorities — emphasize investor protection, transparency, and fraud prevention. Secure payments are essential to:
+
+* Prevent unauthorized transfers.
+* Ensure that investor funds are safeguarded during the investment process.
+* Provide verifiable, auditable records for compliance and audits.
+* Build investor trust in blockchain-based securities and digital assets.
+
+
+
+## Key Benefits
+
+* **Onchain Trust**: Atomic smart contract transactions ensure fairness and transparency.
+* **Offchain Safety**: Bank-grade APIs secure ACH, wire, and card payments.
+* **No Data Exposure**: Sensitive payment details are never stored on the Investor Portal.
+* **Admin Safeguards**: Oversight tools empower admins to protect investors proactively.
+* **Global Compliance**: Secure Payments align with regulatory standards for digital assets and financial services.
+
+
+
+With Secure Payments, investors can confidently participate in offerings, knowing that their funds and digital assets are always protected through **blockchain automation, secure banking integrations, and compliance oversight**.
+
+
+Here’s a refined version of your footnote language that makes the **risks, disclaimers, and security implications** very clear while sounding professional and investor-focused:
+
+
+
+**⚠️ Important Wire Transfer Notice**
+Investors must carefully verify all wire transfer instructions **directly within the Akemona Investor Portal** before initiating any transfer. For security reasons, **do not rely on wire transfer instructions received via email, text, or phone call**, as these may be fraudulent. Always confirm that you are sending funds to the correct receiving account as displayed on the portal.
+
+If you have any doubts about the accuracy of wire transfer details, please contact **[support@akemona.com](mailto:support@akemona.com)** immediately for verification.
+
+**Disclaimer:** Wire transfers are executed outside the Akemona platform and are under the sole control of the investor and their bank. Akemona does not control the movement of funds once a wire transfer has been initiated. If funds are sent to an incorrect or unauthorized account, they may be **irretrievable**, and Akemona may not be able to assist in recovering them.
+
