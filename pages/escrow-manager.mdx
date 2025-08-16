@@ -1,5 +1,66 @@
 # Escrow Manager
 
+## Executive Summary
+
+The **Escrow Manager** is a purpose-built application that ensures the integrity and security of digital asset offerings by introducing a system of checks and balances across both onchain and offchain transactions. It provides a transparent, automated, and auditable environment for managing investor funds through qualified custodians, escrow agents, or issuer-designated agents. By combining **smart contracts, blockchain automation, and API-driven integrations with traditional banking systems**, the Escrow Manager safeguards investors while simplifying fund reconciliation for issuers and custodians.
+
+
 ## Overview
 
-TODO
+The Escrow Manager functions as the trusted layer between investors, issuers, and custodians, ensuring that funds are securely held and only released under predefined conditions. It supports a variety of offering types:
+
+* **Regulated digital securities offerings** (requiring qualified custodians such as banks, trust companies, or broker-dealers).
+* **Non-regulated offerings** (e.g., utility token sales), where issuers may designate escrow wallets and bank accounts without the need for licensed custodians.
+
+By supporting both **onchain escrow (crypto wallets)** and **offchain escrow (bank accounts)**, the Escrow Manager provides issuers and investors with a complete solution that covers all payment flows, reconciliations, cancellations, and refunds.
+
+
+## Capabilities
+
+### 1. Onchain Escrow and Smart Contract Automation
+
+* Automatically transfers onchain investments into wallets held under the custody of qualified third-party custodians.
+* Upon successful completion of the offering, smart contracts transfer funds to the issuer.
+* If the offering is canceled or fails to meet its terms, funds are automatically returned to investors.
+* Supports investor-initiated cancellations before offering close, ensuring investor protection.
+
+### 2. Offchain Escrow Integration
+
+* Enables issuers or custodians to track fiat payments made via ACH, wire transfer, or payment cards.
+* Integrates with banking APIs to detect fund receipts in escrow bank accounts.
+* Ensures digital assets are only released after offchain funds have been confirmed and signed off by the escrow agent.
+* Prevents premature issuance of digital assets by synchronizing with the Admin App.
+
+### 3. Reconciliation and Recordkeeping
+
+* Provides dashboards for escrow agents to review onchain and offchain transactions.
+* Tracks pending, canceled, and returned transactions across both investment types.
+* Generates downloadable reconciliation and reporting data to support audits, compliance checks, and Sarbanes-Oxley requirements.
+* Maintains a full audit trail of approvals, refunds, and reconciliations.
+
+### 4. Investor Protection
+
+* Ensures that no funds are released unless offering terms are met.
+* Allows escrow agents or custodians to authorize refunds in the case of cancellations or failed offerings.
+* Provides investors with confidence through secure fund custody, return logistics, and compliance with offering conditions.
+
+### 5. Modular and Flexible Architecture
+
+* Automatically deactivates onchain or offchain functionality depending on the structure of the offering.
+* Adaptable for **100% onchain**, **100% offchain**, or **hybrid investment flows**.
+* Designed to evolve with market needs, supporting new features and integrations through a modular framework.
+
+### 6. Security and Access Controls
+
+* Secured with **two-factor authentication** for all escrow agents and custodians.
+* Supports passkey-based authentication for seamless and secure login.
+* Provides role-based access, ensuring that only authorized parties can reconcile funds or approve refunds.
+
+
+## Strategic Value
+
+* **For Investors**: Protects their funds by ensuring return logistics and preventing asset release without payment confirmation.
+* **For Issuers**: Simplifies escrow management by automating reconciliation and integrating with both blockchain and banking systems.
+* **For Custodians/Escrow Agents**: Provides a transparent, auditable environment for overseeing investor funds, supporting both regulatory compliance and operational efficiency.
+* **For Regulators and Auditors**: Delivers verifiable reporting and audit trails to demonstrate compliance with financial regulations and best practices.
+
