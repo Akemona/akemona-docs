@@ -1,5 +1,87 @@
 # KYC/AML Integration
 
+## Executive Summary
+
+**KYC (Know Your Customer) and AML (Anti-Money Laundering) compliance** are critical requirements for any financial platform dealing with digital assets. The Akemona ecosystem integrates KYC/AML processes seamlessly across its **Investor Portal, Admin App, and Escrow Manager** to ensure that all participants are properly verified, transactions are compliant with international and U.S. regulations, and risks related to fraud, money laundering, and terrorism financing are mitigated.
+
+The integration is designed to balance **regulatory compliance, investor protection, and operational efficiency** by leveraging third-party providers such as **Plaid** and **Trulioo**, while also supporting manual review by lead managers and custodians. By embedding KYC/AML functionality into multiple layers of the platform, Akemona ensures that compliance is not an afterthought but a **core capability across the entire digital asset lifecycle**.
+
+
+
 ## Overview
 
-TODO
+KYC/AML Integration is not a standalone application; it is a **capability built into all three core apps**:
+
+* **Investor Portal** – Collects identity data, initiates KYC/AML at the time of first investment, and verifies wallets.
+* **Admin App** – Manages KYC/AML workflows, integrates with OFAC screening, and controls issuance of digital assets.
+* **Escrow Manager** – Ensures custodians only hold funds from verified investors, reconciling KYC/AML status before releasing funds.
+
+This integration ensures that **no digital asset is issued, and no investment is accepted, unless the investor has passed all required KYC/AML checks**.
+
+
+
+## Key Capabilities
+
+### 1. Investor Portal – Onboarding & Identity Collection
+
+* **Initial Registration**: Collects basic data such as name, address, email, phone, and registered crypto wallets.
+* **Investment Triggered KYC/AML**: Investors provide SSN, Tax ID, passport, or other government-issued IDs at the time of their first investment.
+* **Global Compliance**: Non-U.S. persons provide passport copies and proof of address (e.g., utility bills).
+* **Wallet Verification**: Registered wallets are tied to verified identities, enabling asset recovery and compliance with securities regulations.
+
+### 2. Admin App – Compliance Oversight & OFAC Screening
+
+* **Third-Party Verification**: Integrates with services like Plaid or Trulioo for automated KYC/AML checks.
+* **Manual Review**: Lead managers can follow up with investors if automated checks fail and manually approve once compliance is confirmed.
+* **OFAC Integration**: The Admin App is connected to the **U.S. Department of the Treasury’s OFAC lists**, ensuring investors and wallet addresses are screened against sanctioned entities.
+* **Flagging System**: Once verified, an investor’s account is flagged as “KYC/AML approved,” enabling issuance of digital assets.
+
+### 3. Escrow Manager – Custodian & Fund Verification
+
+* **Investor Fund Protection**: Custodians and escrow agents confirm that funds come only from verified investors.
+* **Integrated Status Checks**: All KYC/AML status data is shared with the Escrow Manager, allowing custodians to block or return funds if an investor is not verified.
+* **Full Audit Trail**: Ensures traceability of funds and regulatory compliance for both onchain and offchain escrow.
+
+
+
+## Compliance with Laws and Regulations
+
+KYC/AML Integration supports compliance with a wide range of **U.S. and international financial regulations**, including:
+
+* **Bank Secrecy Act (BSA)** – Requires financial institutions to verify customer identities and report suspicious activity.
+* **USA PATRIOT Act** – Expands AML obligations to prevent terrorism financing.
+* **OFAC Sanctions Programs** – Prohibits transactions with sanctioned individuals, entities, and wallet addresses.
+* **FinCEN Guidelines** – Require digital asset platforms to implement AML programs and file suspicious activity reports.
+* **FATF Recommendations (Global)** – Provides global standards on customer due diligence (CDD) and AML measures.
+* **EU AML Directives (AMLD5/AMLD6)** – Extends AML obligations to cryptocurrency platforms within the European Union.
+
+By adhering to these laws and frameworks, Akemona ensures that its platform can operate in a **globally compliant and scalable manner**, supporting both U.S. and international investors.
+
+
+
+## Strategic Value
+
+### For Investors
+
+* Confidence that the platform operates within legal frameworks.
+* Assurance that their funds are protected from association with illicit activity.
+* Faster onboarding and approvals through automated verification.
+
+### For Issuers
+
+* Access to pre-verified investors, reducing compliance overhead.
+* Assurance that all investor transactions are compliant.
+* Protection against reputational and regulatory risks.
+
+### For Custodians and Lead Managers
+
+* Seamless integration of compliance into existing workflows.
+* Automated OFAC checks and wallet screening.
+* Full audit trails supporting internal and external reviews.
+
+
+
+## Conclusion
+
+KYC/AML Integration is the **compliance backbone** of the Akemona ecosystem, ensuring that every investor, issuer, and custodian operates within the boundaries of U.S. and global regulations. By embedding KYC/AML across the **Investor Portal, Admin App, and Escrow Manager**, Akemona enables compliant, secure, and efficient digital asset issuance and investment—building trust and transparency into every transaction.
+
