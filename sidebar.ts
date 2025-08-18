@@ -5,7 +5,7 @@ export const sidebar = {
     {
       text: "Introduction",
       items: [
-        { text: "Why Akemona", link: "/introduction" },
+        { text: "Tokenization Cloud", link: "/introduction" },
         { text: "FAQ", link: "/faq" },
         { text: "Issuer Hub", link: "/issuer-hub" },
         { text: "Admin Portal", link: "/admin-portal" },
