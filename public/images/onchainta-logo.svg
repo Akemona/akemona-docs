@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="342" height="195.116" viewBox="0 0 342 195.116">
+  <g id="Group_9" data-name="Group 9" transform="translate(-218.402 -308.611)">
+    <g id="Group_4" data-name="Group 4">
+      <g id="Group_3" data-name="Group 3">
+        <g id="Group_1" data-name="Group 1">
+          <path id="Path_1" data-name="Path 1" d="M390.154,455.489s-52.908,59.959-120.673,26.729l10.342-3.753-57.629-22.48,2.346,36.665,6.571-2.75s39.567,23.959,94.428,8.8c0,0,48.642-14.248,71.235-43.212Z" fill="#be2026"/>
+        </g>
+        <g id="Group_2" data-name="Group 2">
+          <path id="Path_2" data-name="Path 2" d="M287.32,489.2s32.81-6.4,63.734-33.683l39.1-.03S347.851,506.167,287.32,489.2Z" fill="#be2026" opacity="0.3"/>
+        </g>
+      </g>
+    </g>
+    <text id="OnchainTA" transform="translate(218.402 430.079)" fill="#ee9432" font-size="63.564" font-family="BiomePro-SemiBoldIt, Biome Pro" font-weight="600" font-style="italic"><tspan x="0" y="0">Onchain</tspan><tspan y="0" fill="#457aaa">TA</tspan></text>
+    <g id="Group_8" data-name="Group 8">
+      <g id="Group_7" data-name="Group 7">
+        <g id="Group_5" data-name="Group 5">
+          <path id="Path_3" data-name="Path 3" d="M389.811,356.849s52.907-59.959,120.669-26.728l-10.341,3.752,57.632,22.479-2.345-36.664-6.571,2.75s-39.569-23.959-94.432-8.8c0,0-48.639,14.248-71.235,43.211Z" fill="#007c46"/>
+        </g>
+        <g id="Group_6" data-name="Group 6">
+          <path id="Path_4" data-name="Path 4" d="M492.644,323.137s-32.812,6.4-63.736,33.683l-39.1.029S432.111,306.172,492.644,323.137Z" fill="#007c46" opacity="0.3"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
