@@ -1,3 +1,4 @@
+// import * as React from "react";
 import { defineConfig } from "vocs";
 import { sidebar } from "./sidebar";
 
@@ -10,6 +11,20 @@ export default defineConfig({
   logoUrl: {
     light: "/images/app-logo-light.svg",
     dark: "/images/app-logo-dark.svg",
+  },
+  head() {
+    const gtagScript = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GTM-NQXRVQ2');
+      `;
+    return (
+      <>
+        <script src="https://www.googletagmanager.com/gtag/js?id=GTM-NQXRVQ2" async />
+        <script dangerouslySetInnerHTML={{ __html: gtagScript }} />
+      </>
+    );
   },
   socials: [
     {
