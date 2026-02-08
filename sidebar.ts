@@ -24,7 +24,7 @@ export const sidebar = {
         { text: "Akemona Cloud", link: "/platforms/akemona-cloud" },
         { text: "Akemona Enterprise", link: "/platforms/akemona-enterprise" },
         { text: "Akemona Launchpad", link: "/platforms/funding-portal" },
-        { text: "AI FlowBook", link: "/platforms/flowbook" },
+        { text: "AI FlowBook", link: "/platforms/ai-flowbook" },
       ],
     },
   ],
