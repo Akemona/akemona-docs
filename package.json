@@ -11,15 +11,15 @@
     "format": "prettier \"pages/**/*\" --write --ignore-unknown"
   },
   "dependencies": {
-    "react": "19.1.1",
-    "react-dom": "19.1.1",
-    "vocs": "1.0.13"
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "vocs": "1.4.1"
   },
   "devDependencies": {
-    "@types/react": "19.1.10",
-    "prettier": "3.6.2",
-    "tailwindcss": "4.1.11",
-    "typescript": "5.9.2"
+    "@types/react": "19.2.13",
+    "prettier": "3.8.1",
+    "tailwindcss": "4.1.18",
+    "typescript": "5.9.3"
   },
-  "packageManager": "pnpm@10.14.0+sha512.ad27a79641b49c3e481a16a805baa71817a04bbe06a38d17e60e2eaee83f6a146c6a688125f5792e48dd5ba30e7da52a5cda4c3992b9ccf333f9ce223af84748"
+  "packageManager": "pnpm@10.29.2+sha512.bef43fa759d91fd2da4b319a5a0d13ef7a45bb985a3d7342058470f9d2051a3ba8674e629672654686ef9443ad13a82da2beb9eeb3e0221c87b8154fff9d74b8"
 }
