@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(:root[style*='color-scheme:dark'] *, :root[style*='color-scheme: dark'] *));
+
+:root {
+  scroll-behavior: smooth;
+}

@@ -8,18 +8,24 @@
     "build": "vocs build",
     "preview": "vocs preview",
     "deploy": "git pull && pnpm build",
-    "format": "prettier \"pages/**/*\" --write --ignore-unknown"
+    "deploy:dev": "git pull && DOCS_BASE_URL=https://docs.akemona-dev2.com pnpm build",
+    "format": "prettier \"src/pages/**/*\" --write --ignore-unknown"
   },
   "dependencies": {
     "react": "19.2.7",
     "react-dom": "19.2.7",
-    "vocs": "1.4.1"
+    "vocs": "2.0.14",
+    "waku": "1.0.0-beta.1"
   },
   "devDependencies": {
+    "@types/node": "25.9.3",
     "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
     "prettier": "3.8.4",
     "tailwindcss": "4.3.1",
-    "typescript": "6.0.3"
+    "typescript": "6.0.3",
+    "vite": "8.0.16"
   },
   "packageManager": "pnpm@11.7.0"
 }

@@ -1,4 +1,4 @@
-import type { Sidebar } from "vocs";
+import type { Config } from "vocs/config";
 
 export const sidebar = {
   "/": [
@@ -29,4 +29,4 @@ export const sidebar = {
       ],
     },
   ],
-} as const satisfies Sidebar;
+} satisfies Config["sidebar"];

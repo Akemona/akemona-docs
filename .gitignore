@@ -2,5 +2,6 @@
 node_modules
 dist
 .vocs
+src/pages.gen.ts
 tsconfig.tsbuildinfo
 tsconfig.*.tsbuildinfo
