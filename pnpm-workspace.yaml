@@ -6,3 +6,4 @@ trustPolicyIgnoreAfter: 2880
 allowBuilds:
   es5-ext: false
   esbuild: true
+  vue-demi: false
