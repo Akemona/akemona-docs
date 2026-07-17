@@ -7,6 +7,7 @@ export const sidebar = {
       items: [
         { text: "Tokenization Cloud", link: "/introduction" },
         { text: "CapMark", link: "/capmark" },
+        { text: "Clarity Act", link: "/clarity-act" },
         { text: "FAQ", link: "/faq" },
         { text: "Issuer Hub", link: "/issuer-hub" },
         { text: "Admin Portal", link: "/admin-portal" },
